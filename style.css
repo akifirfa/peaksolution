@@ -1,0 +1,139 @@
+
+
+.banner{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 400px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+.content p{
+    font-size: larger;
+    margin: 20px ;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 4px solid rgb(5, 66, 81);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background-color: rgb(5, 66, 81);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+/* Table Code */
+
+.Container{
+          justify-content: center;
+          display: flex;
+          position:relative;
+        }
+        .Container form{
+          padding: 20px;
+          background-color: white;
+          text-align: center;
+          width: 500px;
+          border-radius: 20px;
+          box-shadow: 0 4px 4px 0 black;
+          
+
+        }
+        .Container form .box{
+          width: 80%;
+          border-radius: 15px;
+          padding: 11px;
+          margin: 10px;
+          border-color: lightgrey;
+          background-color: lightgrey;
+          border: none;
+          box-shadow: 0 2px 3px 0 black;
+        }
+        .Container form .btn{
+          width: 30%;
+          background-color: #0f9d58;
+          color: white;
+          margin: 15px;
+          padding: 5px;
+          border-radius: 50px;
+          border: none;
+          box-shadow: 0 2px 3px 0 black;
+          cursor: pointer;
+        }
+        .Container form .square{
+          width: 100px;
+          height: 100px;
+          padding: 10px;
+          border-radius: 70px;
+        }
